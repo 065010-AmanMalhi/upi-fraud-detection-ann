@@ -661,12 +661,13 @@ elif page == "🔍  Predict Transaction":
                 hovertemplate='%{y}<br>Risk: %{x}%<extra></extra>'
             ))
             fig.update_layout(
-                **dark_layout(),
-                title=dict(text='Risk Factor Breakdown', font=dict(size=13, color='#64748b', family='Rajdhani'), x=0),
-                height=300,
-                xaxis=dict(range=[0,120], showgrid=False, showticklabels=False),
-                yaxis=dict(tickfont=dict(size=10, family='Share Tech Mono')),
-                margin=dict(t=35, b=10, l=10, r=60)
+                **dark_layout(
+                    title=dict(text='Risk Factor Breakdown', font=dict(size=13, color='#64748b', family='Rajdhani'), x=0),
+                    height=300,
+                    xaxis=dict(range=[0,120], showgrid=False, showticklabels=False),
+                    yaxis=dict(tickfont=dict(size=10, family='Share Tech Mono')),
+                    margin=dict(t=35, b=10, l=10, r=60)
+                )
             )
             st.plotly_chart(fig, use_container_width=True)
 
@@ -809,20 +810,6 @@ TOTAL PARAMS &nbsp; 12,801
         use_container_width=True,
         hide_index=True
     )
-    st.markdown("""
-<hr style="margin-top:40px;border-color:rgba(0,255,180,0.08);">
-
-<div style="
-    text-align:center;
-    font-family:'Share Tech Mono', monospace;
-    font-size:0.75rem;
-    color:#334155;
-    letter-spacing:0.12em;
-    padding:12px 0;
-">
-BUILT BY <span style="color:#00ffc8;">AMAN</span> — COLLEGE ANN PROJECT
-</div>
-""", unsafe_allow_html=True)
     
 # ══════════════════════════════════════════════════════════════
 # PAGE 4 — FINE TUNE MODEL
