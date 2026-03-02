@@ -890,6 +890,6 @@ st.markdown("""
     letter-spacing:0.12em;
     padding:12px 0;
 ">
-BUILT BY <span style="color:#00ffc8;">Group-2</span> — ANN PROJECT
+BUILT BY <span style="color:#00ffc8;">AMAN</span> — ANN PROJECT
 </div>
 """, unsafe_allow_html=True)
