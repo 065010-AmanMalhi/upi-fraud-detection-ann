@@ -248,7 +248,7 @@ hr { border-color: rgba(0,255,180,0.08) !important; }
 
 /* Hide Streamlit top header */
 header[data-testid="stHeader"] {
-    display: none !important;
+    background: rgba(0,0,0,0) !important;
 }
 /* Hide scroll-to-top floating control safely */
 [data-testid="stScrollToTopButton"] {
@@ -903,6 +903,6 @@ st.markdown("""
     letter-spacing:0.12em;
     padding:12px 0;
 ">
-BUILT BY <span style="color:#00ffc8;">AMAN</span> — COLLEGE ANN PROJECT
+BUILT BY <span style="color:#00ffc8;">AMAN</span> — ANN PROJECT
 </div>
 """, unsafe_allow_html=True)
