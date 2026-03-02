@@ -21,7 +21,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600;800&display=swap');
 
 /* ── Base ── */
-html, body, [class*="css"] {
+html, body {
     font-family: 'Exo 2', sans-serif;
     background-color: #060910;
     color: #e2e8f0;
@@ -46,8 +46,6 @@ html, body, [class*="css"] {
     background: linear-gradient(180deg, #0a0f1a 0%, #060910 100%);
     border-right: 1px solid rgba(0,255,180,0.15);
 }
-[data-testid="stSidebar"] * { font-family: 'Exo 2', sans-serif !important; }
-
 /* ── Sidebar radio ── */
 [data-testid="stSidebar"] .stRadio label {
     color: #94a3b8 !important;
